@@ -1,32 +1,32 @@
-body 
+#container
 {
-	background-color: powderblue;
-}
-h1, h2, h3 
-{
-	text-align: center;
-	color: black; 
+	padding: 10px;
+	justify-content: flex-start;
+	background-color: forestgreen;
 	font-family: calibri;
-	font-size: 300%;
+	font-weight: lighter;
+
 }
-ol
-{
+#header {
+	color: white; 
 	text-align: center;
-	color: black; 
-	font-family: calibri;
+	font-size: 250%;
+}
+h2, h3, h4 
+{
+	color: white; 
 	font-size: 200%;
 }
-ul
+ol, ul, p, li
 {
-	text-align: center;
 	color: black; 
-	font-family: calibri;
-	font-size: 200%;
+	font-size: 100%;
+	background-color: white;
+	border-color: black;
+	border: 0.1em solid black;
 }
 form
 {
-	text-align: center;
-	color: black; 
-	font-family: calibri;
-	font-size: 200%;	
+	color: white; 
+	font-size: 100%;	
 }

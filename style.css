@@ -20,16 +20,6 @@ h2, h3, h4
 	color: white; 
 	font-size: 200%;
 }
-/*p
-{
-	color: black; 
-	font-size: 100%;
-	background-color: white;
-	border-color: black;
-	border: 0.1em solid black;
-	padding: 20px;
-
-}*/
 p
 {
 	color: black; 
@@ -47,9 +37,10 @@ form
 }
 input[type=text] 
 {
+	font-size: 100%;
     background-color: white;
-    background-image: url(https://cdn.worldvectorlogo.com/logos/yik-yak-icon.svg);
-    background-position: 10px 10px;
+   /* background-image: url(https://i.pinimg.com/736x/ef/e6/e6/efe6e6252030dfab560802188537f9b4--silhouette-online-store-silhouette-design.jpg);
+    background-position: 10px 10px;*/
     background-repeat: no-repeat;
     padding: 16px 20px;
     border: none;
@@ -62,6 +53,7 @@ input[type=placeholder]
 }
 input[type=submit] 
 {
+	font-size: 100%;
     background-color: tomato;
     border: none;
     border-radius: 4px;

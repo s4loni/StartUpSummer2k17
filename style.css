@@ -2,9 +2,31 @@ body
 {
 	background-color: powderblue;
 }
-h1 h2 h3 
+h1, h2, h3 
 {
+	text-align: center;
 	color: black; 
 	font-family: calibri;
 	font-size: 300%;
+}
+ol
+{
+	text-align: center;
+	color: black; 
+	font-family: calibri;
+	font-size: 200%;
+}
+ul
+{
+	text-align: center;
+	color: black; 
+	font-family: calibri;
+	font-size: 200%;
+}
+form
+{
+	text-align: center;
+	color: black; 
+	font-family: calibri;
+	font-size: 200%;	
 }

@@ -2,7 +2,10 @@
 {
 	padding: 10px;
 	justify-content: flex-start;
-	background-color: forestgreen;
+	background-image: url(https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=827&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	font-family: calibri;
 	font-weight: lighter;
 
@@ -17,16 +20,54 @@ h2, h3, h4
 	color: white; 
 	font-size: 200%;
 }
-ol, ul, p, li
+/*p
 {
 	color: black; 
 	font-size: 100%;
 	background-color: white;
 	border-color: black;
 	border: 0.1em solid black;
+	padding: 20px;
+
+}*/
+p
+{
+	color: black; 
+	font-size: 100%;
+	width: 95%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
 }
 form
 {
 	color: white; 
 	font-size: 100%;	
+}
+input[type=text] 
+{
+    background-color: white;
+    background-image: url(https://cdn.worldvectorlogo.com/logos/yik-yak-icon.svg);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 50%
+}
+input[type=placeholder]
+{
+
+}
+input[type=submit] 
+{
+    background-color: tomato;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }

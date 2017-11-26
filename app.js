@@ -1,5 +1,5 @@
 const postFunction = () => {
-	console.log(document.getElementById('postedMessage'));
-}
+	console.log(document.getElementById('postedMessage').value);
+};
 
 	

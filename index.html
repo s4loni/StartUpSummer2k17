@@ -3,6 +3,7 @@
 <head>
 	<title>YikYaK2.0</title>
 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -10,8 +11,8 @@
 			<h1>Yakker</h1>
 		</div>
 		<form>
-				<input type="text" name="Message" placeholder="Say something...">
-				<input type="submit" value="Submit">
+				<input type="text" name="Message" placeholder="Say something..." id="postedMessage">
+				<input type="submit" value="Submit" onclick="postFunction();">
 		</form>
 		<div id="toppost">
 			<h2>

@@ -13,8 +13,6 @@ function addMessage() {
   
   // add the text node to the newly created div
   newP.appendChild(newPost);  
-  console.log(newP);
-  console.log(newP.appendChild(newPost));
 
   // add the newly created element and its content into the DOM 
   var currentDiv = document.getElementById("recentposts"); 

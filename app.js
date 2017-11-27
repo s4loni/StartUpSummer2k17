@@ -19,7 +19,7 @@ function addMessage() {
   currentDiv.appendChild(newP); 
 };
 
-//button over form in javascript
+console.log(defaultApp.name);
 
 
 

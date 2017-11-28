@@ -31,7 +31,7 @@ function addMessage() {
   var retrieveRef = firebase.database().ref().key
 
   retrieveRef.on('value', function(datasnapshot) {
-      inputmsg.innerText = datasnapshot; 
+      inputmsg.innerText = datasnapshot.val(); 
   });
 
 };

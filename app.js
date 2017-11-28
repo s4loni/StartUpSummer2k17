@@ -3,6 +3,22 @@
 	//console.log(document.getElementById('postedMessage').value); //prints the text from the input form to console
 //};
 
+//Loads the document when the file loads
+ $(document).ready(function(){
+
+  //refer to the posts section of the firebase database
+  var postsRef = firebase.database().ref().child("Posts");
+
+    postsRef.on("child_added", snap => {
+
+      var post = snap.val();
+
+      $("#recentposts").append("<p>"+ post + "</p>");
+
+    });
+
+  });
+
 //Adds message to the page in the same form
 function addMessage() {
 	 // create a new p element 
@@ -18,21 +34,14 @@ function addMessage() {
   newP.appendChild(newPost);  
 
   // add the newly created element and its content into the DOM 
-  var currentDiv = document.getElementById("recentposts"); 
-  currentDiv.appendChild(newP); 
+  //var currentDiv = document.getElementById("recentposts"); 
+  //currentDiv.appendChild(newP); 
 
   // add the newly created post into the firebase data 
   var messageRef = firebase.database().ref();
-  messageRef.push().set(inputmsg);
+  messageRef.child("Posts").push().set(inputmsg);
 
-  //returns the unique key from the pushed message //no idea if this works
-  var key = messageRef.key;
-
-  var retrieveRef = firebase.database().ref().key
-
-  retrieveRef.on('value', function(datasnapshot) {
-      inputmsg.innerText = datasnapshot.val(); 
-  });
+  document.getElementById("formy").reset();
 
 };
 

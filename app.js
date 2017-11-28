@@ -21,9 +21,24 @@ function addMessage() {
   var currentDiv = document.getElementById("recentposts"); 
   currentDiv.appendChild(newP); 
 
+  // add the newly created post into the firebase data 
   var messageRef = firebase.database().ref();
   messageRef.push().set(inputmsg);
+
+  //returns the unique key from the pushed message //no idea if this works
+  var key = messageRef.key;
+
+  var retrieveRef = firebase.database().ref().key
+
+  retrieveRef.on('value', function(datasnapshot) {
+      inputmsg.innerText = datasnapshot; 
+  });
+
 };
+
+
+
+
 
 
 

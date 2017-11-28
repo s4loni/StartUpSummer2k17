@@ -8,8 +8,11 @@ function addMessage() {
 	 // create a new p element 
   var newP = document.createElement("p");
 
+  //Set user's input message to inputmsg
+  var inputmsg = document.getElementById('postedMessage').value;
+
   // and give it some content 
-  var newPost = document.createTextNode(document.getElementById('postedMessage').value); 
+  var newPost = document.createTextNode(inputmsg); 
   
   // add the text node to the newly created div
   newP.appendChild(newPost);  
@@ -17,9 +20,11 @@ function addMessage() {
   // add the newly created element and its content into the DOM 
   var currentDiv = document.getElementById("recentposts"); 
   currentDiv.appendChild(newP); 
+
+  var firebaseRef = firebase.database().ref();
+  firebaseRef.child("Text").set(inputmsg);
 };
 
-console.log(defaultApp.name);
 
 
 

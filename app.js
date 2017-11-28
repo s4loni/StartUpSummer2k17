@@ -21,8 +21,8 @@ function addMessage() {
   var currentDiv = document.getElementById("recentposts"); 
   currentDiv.appendChild(newP); 
 
-  var firebaseRef = firebase.database().ref();
-  firebaseRef.child("Text").set(inputmsg);
+  var messageRef = firebase.database().ref();
+  messageRef.push().set(inputmsg);
 };
 
 
